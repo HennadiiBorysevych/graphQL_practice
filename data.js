@@ -5,6 +5,22 @@ const UserList = [
     username: "johndoe123",
     age: 30,
     nationality: "American",
+    friends: [
+      {
+        id: 2,
+        name: "Jane Smith",
+        username: "janesmith456",
+        age: 25,
+        nationality: "British",
+      },
+      {
+        id: 3,
+        name: "Michael Johnson",
+        username: "mikej123",
+        age: 28,
+        nationality: "Canadian",
+      },
+    ],
   },
   {
     id: 2,
@@ -26,13 +42,6 @@ const UserList = [
     username: "emadams789",
     age: 22,
     nationality: "Australian",
-  },
-  {
-    id: 5,
-    name: "Daniel Kim",
-    username: "dankim999",
-    age: 33,
-    nationality: "South Korean",
   },
   {
     id: 6,
@@ -105,3 +114,26 @@ const UserList = [
     nationality: "Russian",
   },
 ];
+
+const MovieList = [
+  {
+    id: 1,
+    name: "The Shawshank Redemption",
+    year: 1994,
+    isInTheaters: false,
+  },
+  {
+    id: 2,
+    name: "The Godfather",
+    year: 1972,
+    isInTheaters: false,
+  },
+  {
+    id: 3,
+    name: "The Dark Knight",
+    year: 2008,
+    isInTheaters: false,
+  },
+];
+
+module.exports = { UserList, MovieList };
